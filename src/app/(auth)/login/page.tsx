@@ -101,6 +101,17 @@ export default function LoginPage() {
 					>
 						{isLoading ? "กำลังตรวจสอบ..." : "Log in"}
 					</button>
+					<p className="mt-4 text-sm text-gray-500 text-center">
+						Looking for demo access?
+						<a
+							href="https://github.com/chaiyapat-r/restaurant-web-app-admin-frontend/blob/master/README.md"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-[#FF6B35] hover:underline font-medium ml-1"
+						>
+							Check README.md
+						</a>
+					</p>
 				</form>
 			</div>
 		</main>

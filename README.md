@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Restaurant Admin Dashboard
 
-## Getting Started
+A comprehensive back-office management system designed for restaurant owners, integrated with a full-stack architecture to handle real-time customer orders.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Quick Start (Demo Access)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To test the live system, please use the following credentials:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Login URL:** `https://restaurant-web-app-admin-frontend.vercel.app/login`
+- **Username:** `admin`
+- **Password:** `mypassword123`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## How to Demo (Step-by-Step)
 
-To learn more about Next.js, take a look at the following resources:
+Follow these steps to experience the complete "Admin-to-Customer" flow:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Generate QR Code (Open Table):**
+   - Navigate to the **"Tables"** menu in the Admin Dashboard.
+   - Select a table to display its unique **QR Code**.
+2. **Customer Ordering:**
+   - Scan the QR Code using your smartphone (this redirects you to the customer storefront with the specific tokenId).
+   - Browse the menu and place a simulated order.
+3. **Monitor Orders:**
+   - Go back to the Admin **"Dashboard"** to view and manage the incoming order in real-time.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Features & Functionalities
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 1. Dashboard (Order Monitoring & Management)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Live Tracking:** Monitor incoming orders from customers immediately.
+- **Status Management:** Update order phases (Pending, Cooking, Ready to Serve).
+
+### 2. Master Data Management
+
+Full CRUD (Create, Read, Update, Delete) capabilities to manage restaurant resources:
+
+- **Categories:** Organize menu items into logical groups.
+- **Menus:** Manage prices, descriptions, images, and availability.
+- **Menu Options:** Configure add-ons like spiciness levels or extra toppings.
+- **Tables:** Manage table layout and generate unique QR codes for each station.
+
+### 3. Security & Roles
+
+- **JWT Authentication:** Secure login system using JSON Web Tokens.
+- **Role-Based Access Control (RBAC):** Ensures only authorized administrators can access sensitive management data.
+
+---
+
+## Tech Stack
+
+- **Frontend:** Next.js 14+ (App Router), Tailwind CSS, Lucide React icons.
+- **Backend:** NestJS API (Node.js).
+- **Database:** PostgreSQL with Prisma ORM.
+- **Infrastructure:** Docker & Docker Compose.
+
+---
