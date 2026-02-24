@@ -22,7 +22,7 @@ Follow these steps to experience the complete "Admin-to-Customer" flow:
    - Navigate to the **"Tables"** menu in the Admin Dashboard.
    - Select a table to display its unique **QR Code**.
 2. **Customer Ordering:**
-   - Scan the QR Code using your smartphone (this redirects you to the customer storefront with the specific tokenId).
+   - Scan the QR Code using your smartphone (this redirects you to the customer storefront with the specific session token).
    - Browse the menu and place a simulated order.
 3. **Monitor Orders:**
    - Go back to the Admin **"Dashboard"** to view and manage the incoming order in real-time.
