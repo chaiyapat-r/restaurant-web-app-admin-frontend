@@ -158,7 +158,7 @@ export default function TablePage() {
 		process.env.NEXT_PUBLIC_WEB_FRONTEND_URL || "http://localhost:3002";
 
 	// สร้าง QR URL ใหม่ให้ชี้ไปที่ /order/[tableNumber]
-	const qrUrl = `${webBaseUrl}/order/${selectedTable?.number}?token=${generatedToken}`;
+	const qrUrl = `${webBaseUrl}/order?token=${generatedToken}`;
 
 	if (loading)
 		return (
