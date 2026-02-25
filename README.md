@@ -1,3 +1,5 @@
+> **Note on Demo Performance:** > The backend is hosted on **Render's Free Tier**. If the application hasn't been accessed recently, the server may be in "Sleep Mode." Please allow **30-60 seconds** for the initial request to "wake up" the server. Once awake, the app will perform normally.
+
 # Restaurant Admin Dashboard
 
 A comprehensive back-office management system designed for restaurant owners, integrated with a full-stack architecture to handle real-time customer orders.
